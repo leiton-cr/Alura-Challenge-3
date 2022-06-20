@@ -1,0 +1,57 @@
+/*Sección Title*/
+
+.title__container {
+  margin: 0 1rem;
+  justify-content: space-between;
+}
+
+.title__profile {
+  width: 100px;
+  border-radius: 50%;
+  filter: grayscale(1);
+}
+
+.title__bio {
+  max-width: 800px;
+  font-size: 1.7rem;
+}
+
+.title__subsection {
+  font-weight: 400;
+  max-width: 800px;
+  font-size: 1rem;
+}
+
+.title__network {
+  display: flex;
+  gap: 1em;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+  .title__container {
+    margin: 0em 2em;
+    display: flex;
+    gap: 3em;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+
+  .title__profile {
+    width: 150px;
+  }
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  .title__div {
+    gap: 1em;
+  }
+  .title__profile {
+    width: 370px;
+  }
+
+  .title__bio {
+    font-size: 2.1rem;
+  }
+}

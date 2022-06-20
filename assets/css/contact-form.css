@@ -1,0 +1,127 @@
+.contact-form{
+    background-color: var(--clr-bg-secodary);
+}
+
+.contact-form__title{
+    font-size: 1.5rem;
+}
+
+.contact-form__subtext{
+    margin: .5em;
+    font-weight: 400;
+}
+
+.contact-form__form{
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    margin: 2em 0;
+}
+
+.contact-form__input{
+    padding: 2em  1em .5em 1em ;
+    outline: none;
+    border: 1px solid transparent;
+    transition: outline 1s;
+    border-radius: .2em;
+    resize: none;
+    transition: border .25s;
+    border-bottom: 2px solid rgb(207, 207, 207);
+    width: 100%;
+    font-family: "Raleway";
+    background-color: var(--input-bg);
+    color: inherit;
+}
+
+.contact-form__input:focus{
+    border-bottom: 2px solid var(--clr-accent);
+    caret-color: var(--clr-accent);
+}
+
+:not(.contact-form__input:placeholder-shown)+.contact-form__label,
+.contact-form__input:focus+.contact-form__label{
+    color: var(--clr-accent);
+    font-size: .8em;
+    top: .5rem;
+    left: .5rem;
+}
+
+.input__group{
+    position: relative;
+}
+
+.contact-form__label{
+    position: absolute;
+    top: 1.3rem;
+    font-size: 1em;
+    left: 1em;
+    transition: color .25s;
+    
+    color: var(--font-ligth-gray);
+
+    transition-property: all;
+    transition-duration: .25s;
+}
+
+.contact-form__contact{
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-form__btn{
+    width: 20ch;
+    outline: 1px solid var(--clr-accent);
+    background-color: var(--clr-accent);
+    color: var(--clr-white);
+    margin: 0 .5em;
+}
+
+.contact-form__btn:disabled{
+    filter: brightness(.6);
+}
+
+.contact-form__btn:disabled{
+   background-color: var(--font-ligth-gray);
+}
+
+.contact-form__btn:disabled:hover{
+    transform: none;
+}
+
+.contact-form__img{
+    display: none;
+    min-width: 350px;
+}
+
+.contact-form__input.error{
+    border-bottom: 2px solid var(--clr-error);
+}
+
+.contact-form__input.error+.contact-form__label{
+    color:var(--clr-error);
+}
+
+.contact-form__error{
+    display: none;
+    position: absolute;
+    right: .5rem;
+    font-size: .8rem;
+    bottom: -1.8rem;
+    color: var(--clr-error);
+}
+
+.contact-form__input.error+*+.contact-form__error{
+    display: block;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+    .contact-form__img{
+        display: block;
+    }
+}

@@ -1,0 +1,21 @@
+.about{
+    background-color: var(--clr-bg-secodary);
+    padding: 1em;
+    margin: 2em 0;
+}
+
+.about__paragraph{
+    font-weight: 400;
+    max-width: 800px;
+}
+
+
+/*Tablet*/
+@media (min-width: 768px) {}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+    .about__title{
+        font-size: 1.5em;
+    }
+}

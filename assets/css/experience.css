@@ -1,0 +1,51 @@
+.experience__box {
+  margin-bottom: 3em;
+}
+
+.experience__title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.experience__box {
+  align-items: center;
+  gap: 3em;
+}
+
+.experience__box:nth-child(odd) {
+  flex-flow: row-reverse;
+  justify-content: space-between;
+}
+
+.experience__btn--repo,
+.experience__btn--demo {
+  margin: 0 0.5em;
+  min-width: 17ch;
+  font-size: 0.8rem;
+}
+
+.experience__btn--repo {
+  outline: 1px solid var(--clr-accent);
+  color: var(--clr-accent);
+}
+
+.experience__btn--demo {
+  outline: 1px solid var(--clr-accent);
+  background-color: var(--clr-accent);
+  color: var(--clr-white);
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  .experience__box {
+    display: flex;
+  }
+
+  .experience__img {
+    width: 50%;
+  }
+}

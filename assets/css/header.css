@@ -1,0 +1,113 @@
+/*Sección Menu*/
+
+.menu {
+  padding: 1rem;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu__header {
+  display: flex;
+  align-items: center;
+}
+
+.menu__title {
+  margin-left: 1em;
+}
+
+.menu__list {
+  display: flex;
+  gap: 1em;
+}
+
+.menu__list__item {
+  display: none;
+}
+
+.menu__list__item:hover {
+  color: var(--clr-accent);
+  text-decoration: underline;
+}
+
+.menu__list__mail {
+  display: block;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+}
+
+/*Desktop*/
+@media (min-width: 1024px) {
+  .menu__list__item {
+    display: block;
+  }
+}
+
+
+
+
+.switch input {
+  display: none;
+}
+
+.switch {
+  width: 3rem;
+  position: relative;
+  top: -.4em;
+  left: .5em;
+}
+
+.switch label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 1.5rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem rgba(34, 34, 34, 0.096),
+    -0.2rem -0.2rem 0.5rem rgba(34, 34, 34, 0.123);
+  background: var(--clr-bg-secodary);
+  position: relative;
+  cursor: pointer;
+  border-radius: 1.6rem;
+}
+
+.switch label::after {
+  content: "";
+  position: absolute;
+  left: 0.4rem;
+  width: .9rem;
+  height: .9rem;
+  border-radius: 50%;
+  background: transparent;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/581/581601.png");
+  background-position: center;
+  background-size: cover;
+
+
+  
+
+  transition: all 0.4s ease;
+}
+.switch label::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.switch input:checked ~ label::before {
+  opacity: 1;
+}
+.switch input:checked ~ label::after {
+  left: 57%;
+  background: transparent;
+  background-image: url("https://cdn-icons.flaticon.com/png/512/3594/premium/3594101.png?token=exp=1655690811~hmac=a3da27c6597f5e10e067d074e430a2cb");
+
+  background-position: center;
+  background-size: cover;
+}

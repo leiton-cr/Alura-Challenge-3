@@ -1,0 +1,48 @@
+@import url(./reset.css);
+@import url(./base.css);
+
+@import url(./header.css);
+@import url(./footer.css);
+
+@import url(./title.css);
+@import url(./about.css);
+@import url(./skills.css);
+@import url(./hobbies.css);
+@import url(./academic.css);
+@import url(./experience.css);
+@import url(./contact-form.css);
+
+
+.title,
+.menu,
+.about,
+.skills,
+.hobbies,
+.academic,
+.experience,
+.contact-form,
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.menu__container,
+.title__container,
+.about__container,
+.skills__container, 
+.hobbies__container,
+.academic__container,
+.experience__container,
+.contact-form__container,
+.footer__container {
+  width: 80%;
+  min-width: 360px;
+  margin: auto;
+  margin: 1em;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {}
+
+/*Desktop*/
+@media (min-width: 1024px) {}
